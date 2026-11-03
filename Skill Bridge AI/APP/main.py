@@ -13,7 +13,7 @@ from .matching import match_opportunity
 app = FastAPI(title="SkillBridge AI", version="1.0.0",
               description="Academia–Industry Collaboration, Skill Mapping, Internships and Placement Portal")
 BASE = Path(__file__).parent
-app.mount("/static", StaticFiles(directory=BASE / "static"), name="static")
+app.mount("/static", StaticFiles(directory=BASE / "Static"), name="static")
 
 class RegisterIn(BaseModel):
     name: str = Field(min_length=2, max_length=100)
