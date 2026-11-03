@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillBridge AI — Academia meets Industry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div id="toast" class="toast"></div>
+<section id="authView" class="auth-shell">
+  <div class="auth-art">
+    <div class="brand"><span class="brand-mark">S</span> SkillBridge<span class="brand-ai">AI</span></div>
+    <div class="art-copy"><p class="eyebrow">ACADEMIA × INDUSTRY</p><h1>Turn your skills<br>into <em>opportunity.</em></h1><p>One connected ecosystem for skills, internships, careers and collaboration.</p>
+      <div class="art-stats"><div><b>01</b><span>Discover your skill gaps</span></div><div><b>02</b><span>Build a verified Skill Passport</span></div><div><b>03</b><span>Match with real opportunities</span></div></div>
+    </div><div class="art-foot">A smarter bridge from learning to earning.</div>
+  </div>
+  <div class="auth-panel">
+    <div class="auth-mobile brand"><span class="brand-mark">S</span> SkillBridge<span class="brand-ai">AI</span></div>
+    <div class="auth-tabs"><button class="tab active" id="loginTab">Sign in</button><button class="tab" id="registerTab">Create account</button></div>
+    <div id="loginForm"><p class="eyebrow">WELCOME BACK</p><h2>Continue your journey.</h2><p class="muted">Sign in to your SkillBridge workspace.</p>
+      <label>Email address<input id="loginEmail" type="email" placeholder="you@example.com"></label>
+      <label>Password<input id="loginPassword" type="password" placeholder="Enter your password"></label>
+      <button class="primary full" id="loginBtn">Sign in <span>→</span></button>
+      <div class="demo-box"><b>Explore demo accounts</b><p>Student: student@demo.com / Student@123</p><p>Industry: industry@demo.com / Industry@123</p><p>Faculty: faculty@demo.com / Faculty@123</p><p>Institution: institution@demo.com / Admin@12345</p></div>
+    </div>
+    <div id="registerForm" class="hidden"><p class="eyebrow">GET STARTED</p><h2>Create your account.</h2><p class="muted">Join the academia–industry ecosystem.</p>
+      <label>Full name<input id="regName" placeholder="Your name"></label><label>Email address<input id="regEmail" type="email" placeholder="you@example.com"></label>
+      <label>Password<input id="regPassword" type="password" placeholder="At least 8 characters"></label>
+      <label>I am a<select id="regRole"><option value="student">Student</option><option value="industry">Industry partner</option><option value="academician">Academician</option><option value="institution">Institution / Placement cell</option></select></label>
+      <label>Department / Organization<input id="regDepartment" placeholder="e.g. Electronics and Communication"></label>
+      <button class="primary full" id="registerBtn">Create account <span>→</span></button>
+    </div>
+  </div>
+</section>
+<div id="appView" class="app-shell hidden">
+  <aside class="sidebar"><div class="brand"><span class="brand-mark">S</span> SkillBridge<span class="brand-ai">AI</span></div>
+    <div class="side-label">WORKSPACE</div><nav id="nav"></nav>
+    <div class="side-bottom"><div class="mini-avatar" id="avatar">S</div><div class="side-user"><b id="sideName">User</b><span id="sideRole">Role</span></div><button id="logoutBtn" class="icon-btn" title="Sign out">↗</button></div>
+  </aside>
+  <main class="main"><header class="topbar"><div><p class="eyebrow" id="pageEyebrow">YOUR WORKSPACE</p><h2 id="pageTitle">Overview</h2></div><div class="top-actions"><span class="live-dot"></span><span>Workspace active</span><div class="top-avatar" id="topAvatar">S</div></div></header>
+    <div id="content" class="content"></div>
+    <footer>SkillBridge AI <span>·</span> Connecting skills to opportunity <span class="footer-right">Hackathon prototype · Problem 26044</span></footer>
+  </main>
+</div>
+<script src="/static/app.js"></script>
+</body></html>
