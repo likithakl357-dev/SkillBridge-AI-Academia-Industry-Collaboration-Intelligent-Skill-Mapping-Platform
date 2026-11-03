@@ -108,7 +108,7 @@ def startup():
 
 @app.get("/")
 def home():
-    return FileResponse(BASE / "static" / "index.html")
+    return FileResponse(BASE / "satatic" / "index.html")
 
 @app.get("/api/health")
 def health():
